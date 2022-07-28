@@ -1,4 +1,0 @@
-beatles:john george paul ringo
-composers:antonin bedrich bela franz frederic gabriel igor leonard richard wolfgang
-actors:humphrey cary hugh tom robert gerard roger marcello anthony
-british:anthony george hugh john paul ringo roger
