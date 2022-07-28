@@ -1,0 +1,6 @@
+# specifies required users and login prompt
+
+AuthName Protected Pages
+<Limit GET>
+require valid-user
+</Limit>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Wed, Apr 15, 1998 10:37 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Comments CGI</TITLE>
+</HEAD>
+
+<BODY>
+
+<FORM ACTION="/cgi-bin/examples/comments.vi" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded">
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>Comments CGI</H2>
+<P>CGIs are often used for processing HTML forms. CGIs can be also used to generate
+HTML forms dynamically.<BR>
+<BR>
+The following is an example of a fairly common CGI application. It is used to maintain
+a guest book or list of comments. The CGI generates a document with the title specified
+by the parameter <TT>doc_name</TT> followed by a listing from a file specified by
+the parameter <TT>comments_file</TT>, followed by an HTML form.<BR>
+<BR>
+If the CGI receives a parameter <TT>action</TT> with the value <TT>add</TT>, and
+the parameters <TT>name</TT> and <TT>comment</TT> are not empty, then the CGI adds
+the comment to the comments file.<BR>
+<BR>
+When the CGI generates and HTML form, it invisibly embeds parameters it want to remember
+as hidden input fields.</P>
+<P><BR>
+<INPUT TYPE="HIDDEN" NAME="doc_name" SIZE="-1" VALUE="Comments CGI"> <INPUT TYPE="HIDDEN"
+NAME="comments_file" SIZE="-1" VALUE="/cgi-bin/examples.log"> <INPUT TYPE="SUBMIT"
+VALUE="Comments"></P>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+</FORM>
+
+
+</BODY>
+
+</HTML>

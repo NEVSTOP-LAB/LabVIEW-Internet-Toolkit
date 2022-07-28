@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Wed, Apr 15, 1998 10:41 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>CGI Call with Multiple Parameters (GET)</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>CGI Call with Multiple Parameters (GET)</H2>
+<P>When you need to pass multiple parameters to a CGI application, you append them
+to the CGI's URL as a list of ampersand (&amp;) separated <I><TT>name</TT></I><TT>=<I>value</I></TT>
+pairs. Again, parameter names and values must be encoded according to HTTP rules.<BR>
+<BR>
+The following links call the CGI <TT>/cgi-bin/examples/cgi_mlt.vi</TT> which simply
+generates an HTML document with the contents of the parameter list.</P>
+
+<DL>
+	<DT><A HREF="/cgi-bin/examples/get_mlt.vi"><B>/cgi-bin/examples/get_mlt.vi</B></A></DT>
+	<DD>This call does not contain query information.
+	<DT><BR>
+	<A HREF="/cgi-bin/examples/get_mlt.vi?count=46"><B>/cgi-bin/examples/get_mlt.vi?count=46</B></A></DT>
+	<DD>This call has a query string that contains a single parameter <TT>count</TT>
+	with the value <TT>46</TT>.
+	<DT><BR>
+	<A HREF="/cgi-bin/examples/get_mlt.vi?name=John%20Doe"><B>/cgi-bin/examples/get_mlt.vi?name=John%20Doe</B></A></DT>
+	<DD>This call has a query string that contains a single parameter <TT>name</TT> with
+	the value <TT>John Doe</TT>.
+	<DT><BR>
+	<A HREF="/cgi-bin/examples/get_mlt.vi?name=John%20Doe&age=23"><B>/cgi-bin/examples/get_mlt.vi?name=John%20Doe&amp;age=23</B></A></DT>
+	<DD>This call has a query string that contains two parameters <TT>name</TT> and <TT>age</TT>
+	with the values <TT>John&nbsp;Doe</TT> and 23, respectively.
+</DL>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+
+</BODY>
+
+</HTML>

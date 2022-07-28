@@ -1,0 +1,7 @@
+# specifies required users and login prompt
+
+AuthName Composers & British Pages
+<Limit GET>
+require group composers
+require group british
+</Limit>

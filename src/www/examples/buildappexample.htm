@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Fri, Apr 17, 1998 9:28 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Example With a Shipping VI</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif" WIDTH="440" HEIGHT="36"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>Example With a Shipping VI</H2>
+<P>Here is an example of the build instructions for one of the shipping examples in the toolkit. 
+There are also two build scripts included in the &lt;LabVIEW&gt;\www\examples\buildapplication
+that can be used to build the G Web Server into an application.  If you use the build scripts you can skip to step 23.<H2></H2>
+
+<DL>
+	<DL>
+		<DT><B>Example for creating an application out of listdir.vi example shipped with the 
+		Internet Toolkit:</B></A></DT><P>
+		<DD>	1. Select <B>Tools » Build Application or Shared Library (DLL).</B>
+		<DD>	2. Set the location for the executable to be built, <B>Destination directory</B> 
+		to &lt;LabVIEW&gt;\www\examples\buildapplication\app.
+		<DD>	3. Select <B>Single target file containing all VIs</B> from the <B>Build Options</B> 
+		list (should be selected by default).
+		<DD>	4. Select the <B>Source Files</B> tab.
+		<DD>	5. Select <B>Add Top-level VI</B>.
+		<DD>	6. Select HTTP Server Control.vi from <code>&lt;LabVIEW&gt;\vi.lib\addons\internet\http\http0.llb</code>,
+		the top level VI.
+		<DD>	7. Select <B>Add Dynamic VI</B>.
+		<DD>	8. Select HTTP Dynamic VIs.vi from <code>&lt;LabVIEW&gt;\vi.lib\addons\internet\http</code>.
+		<DD>	9. Select <B>Add Dynamic VI</B>.
+		<DD>	10. Select listdir.vi from <code>&lt;LabVIEW&gt;\www\cgi-bin\examples</code>.<br>
+			<DL><DD>(Note: any CGI VI included in a built application must keep its front panel.  This can be
+			done by choosing the VI Settings tab and scrolling to the given VI, and selecting No
+			for the Remove Panel setting)</DL>
+		<DD>	11. Select <B>Add Directory Contents</B>, from the <B>Add Support File</B> pull-down menu, 
+		and include <code>&lt;LabVIEW&gt;\internet\http\conf\</code>. This should include the files:
+		<DD><DL><DL>	o access.cfg </DL>
+		<DD>		o grp.txt 
+		<DD>		o lvhttp.cfg 
+		<DD>		o mime.typ 
+		<DD>		o pwd.txt 
+		<DD>		o srm.cfg </DL>
+		<DD>	12. Select <B>Add Support File</B>.
+		<DD>	13. Select index.htm and indexcgi.htm from <code>&lt;LabVIEW&gt;\www\examples\buildapplication</code>.
+		<DD>	14. Select <B>Add Directory Contents</B>, from the <B>Add Support File</B> pull-down menu, 
+			and include <code>&lt;LabVIEW&gt;\internet\www\images\</code>. 
+		<DD>  15. Select <B>Add Directory Contents</B>, from the <B>Add Support File</B> pull-down menu, 
+			and include <code>&lt;LabVIEW&gt;\internet\http\icons</code>. 
+		<DD>	16. Select <B>Custom Destinations</B>.
+		<DD>	17. Change <B>Build destination</B> for each of the configuration files in step 11 to &lt;LabVIEW&gt;\www\examples\buildapplication\app\internet\http\conf\.
+		<DD>	18. Change <B>Build destination</B> for index.htm and indexcgi.htm to &lt;LabVIEW&gt;\www\examples\buildapplication\app\www\.
+		<DD>	19. Change <B>Build destination</B> for all of the image files from step 14 to &lt;LabVIEW&gt;\www\examples\buildapplication\app\www\images.
+		<DD>	20. Change <B>Build destination</B> for all of the icons from step 15 to &lt;LabVIEW&gt;\www\examples\buildapplication\app\internet\http\icons.
+		<DD>	21. Choose the <B>Build</B> button.
+		<DD>	22. Choose the <B>Done</B> (save .bld file first if you wish) button.
+		<DD>	23. Navigate to the target directory and edit DocumentRoot in the 
+			&lt;LabVIEW&gt;\www\examples\buildapplication\app\internet\http\conf\srm.cfg file 
+			(from the built application, not the original) to be the location of the application's 
+			home directory. (The directory out of which you will serve your documents. By default, 
+			all requests are taken from this directory. Normally this is the application directory 
+			plus www, for example &lt;LabVIEW&gt;\www\examples\buildapplication\app\www.)
+		<DD>	24. Make sure that the ScriptAlias line near the bottom of srm.cfg file (from the 
+		built application, not the original) is uncommented (remove the #).
+		<DD>	25. Edit the &lt;LabVIEW&gt;\www\examples\buildapplication\app\internet\http\conf\lvhttp.cfg file 
+			(from the built application, not the original) so that UseDNS is set to ON.
+		<DD>	26. Run the application.<br>
+			<DL><DD>Note: you need to set the operation control to "start" and run the G Web Server Control VI to start the G Web Server.<br>
+			<DD>Note: HTTP Server Control.vi is design to be used as a subVI.  It along with code to correctly set the settings from 
+			steps 23 to 25 can be used to create a VI that would be used to correctly enable the G Web Server in your application.</DL>
+		<DD>	27. To get to the CGI VI, type in http://yourservername:portyouused/cgi-bin/VIName.vi in your browser.
+			For example, http://localhost/cgi-bin/listdir.vi.
+	</DL>
+</DL>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+</BODY>
+
+</HTML>

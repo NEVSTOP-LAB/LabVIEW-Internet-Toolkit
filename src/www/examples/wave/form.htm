@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Fri, Apr 17, 1998 9:29 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Waveform Calculator</TITLE>
+</HEAD>
+
+<BODY>
+
+<FORM ACTION="/cgi-bin/examples/wavecgi.vi" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded">
+<H1>Waveform Calculator</H1>
+<P><!--picture--></P>
+
+<P>
+<TABLE BORDER="0" CELLPADDING="15" CELLSPACING="0" BGCOLOR="#CCCCFF">
+	<TR>
+		<TD>Low <INPUT TYPE="TEXT" NAME="low" SIZE="4" VALUE="$low$"> and high <INPUT TYPE="TEXT"
+			NAME="high" SIZE="4" VALUE="$high$"> Frequency (in cycles).<BR>
+			<!--animate_start--><BR>
+			Animated with <INPUT TYPE="TEXT" NAME="steps" SIZE="4" VALUE="$steps$"> steps. <!--animate_end--></TD>
+	</TR>
+	<TR>
+		<TD>
+			<CENTER>
+			<P><INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Display Waveform Sum">
+</CENTER>
+		</TD>
+	</TR>
+</TABLE>
+<INPUT TYPE="HIDDEN" NAME="spool" SIZE="-1" VALUE="$spool$"><INPUT TYPE="HIDDEN"
+NAME="form" SIZE="-1" VALUE="/examples/wave/form.htm">
+</FORM>
+
+</BODY>
+
+</HTML>

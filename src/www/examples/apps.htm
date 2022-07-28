@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Fri, Apr 17, 1998 9:28 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Sample Applications</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif" WIDTH="440" HEIGHT="36"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>Sample Applications</H2>
+<P>The following examples demonstrate fully featured CGI application. Some application
+can be controlled by CGI without making any changes to the application themselves.
+Other applications are better implemented inside of the CGI.
+<H2></H2>
+
+<DL>
+	<DL>
+		<DT><A HREF="scope/index.htm"><B>Oscilloscope</B></A></DT>
+		<DD>This example consists of a web interface that controls an existing application.
+		The application <TT>Demo Scope.vi</TT> did not need to be modified to make it accessible
+		from a web site.
+		<P>The example use HTML frames. The left frame displays the osciloscope VI's panel
+		image and the right frame is used for controling the scope VI. All control is done
+		through calls to the <A HREF="victrl.htm"><TT>victrl.vi</TT></A> CGI VI.</P>
+		<P>
+		<DT><A HREF="wave/index.htm"><B>Waveform Calculator</B></A></DT>
+		<DD>This example consists of a web interface that controls a CGI VI. The form supplies
+		the CGI VI with parameters which the VI uses to calculate and graph a waveform and
+		then to return the waveform image.
+	</DL>
+</DL>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+</BODY>
+
+</HTML>

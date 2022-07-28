@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Wed, Apr 15, 1998 10:49 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Server Side Image Maps</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>Server Side Image Maps</H2>
+<P>The following image uses a server-side image map <TT>shapes.map</TT>. Clicking
+on one of the shapes causes the server to redirect you to the page associated with
+that area.<BR>
+<BR>
+The HTML code for the image is:</P>
+<PRE>&lt;A HREF=&quot;shapes.map&quot;&gt;
+&lt;IMG SRC=&quot;../images/shapes.gif&quot; BORDER=&quot;0&quot; <B>ISMAP</B>
+&lt;/A&gt;</PRE>
+<P>
+<HR>
+<BR>
+<A HREF="shapes.map"><IMG SRC="../images/shapes.gif" WIDTH="201" HEIGHT="151" ALIGN="BOTTOM"
+BORDER="0" ISMAP> </A><BR>
+<BR>
+
+<HR>
+<BR>
+<B>Contents of the <TT>shapes.map</TT> image map file</B></P>
+<PRE>rect    rect.htm    31,20 92,71
+circle  circle.htm  150,50 180,50
+poly    poly.htm    20,110  40,90  90,90  110,110  90,130  39,130  20,110  20,110  20,110</PRE>
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+
+</BODY>
+
+</HTML>

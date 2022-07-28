@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Fri, Apr 17, 1998 8:33 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>Access Control of Panel Images</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>Access Control of Panel Images</H2>
+<P>Sometimes you need to have control over who has access to certain VI panel images.
+You can limit access to static and animated panel images based on the browser's Internet
+address or the referring document (the page in which the image is embedded). You
+can also require a user name and password in order to display an image.<BR>
+<BR>
+Access for panel images is specified in the global access configuration file, <TT>internet/http/conf/access.cfg</TT>,
+which you can edit by hand or with the <TT>HTTP Access Configuration VI</TT>. The
+different directives for the configuration file are described in the user manual.<BR>
+
+<HR>
+<BR>
+For this example, the VI <TT>Secret Panel.vi</TT> has been protected with the following
+directives:
+
+
+<BLOCKQUOTE>
+	<PRE></PRE>
+	<PRE> 1   &lt;Panel Secret Panel.vi&gt;
+ 2   AuthUserFile conf/pwd.txt
+ 3   AuthName Secret Panel
+ 4   &lt;Limit Snapshot&gt;
+ 5   require valid-user
+ 6   &lt;/Limit&gt;
+ 7   &lt;Limit Monitor&gt;
+ 8   require user salvador
+ 9   &lt;/Limit&gt;
+10   &lt;/Panel&gt;</PRE>
+	<PRE></PRE>
+
+</BLOCKQUOTE>
+
+<P>
+<TABLE BORDER="0">
+	<TR>
+		<TD VALIGN="TOP">Line <B>1</B> and <B>10</B> specify that these directives affect the VI <TT>Secret
+			Panel.vi</TT>.<BR>
+			Line <B>2</B> specifies the location of the user file (since the path is relative,
+			it is appended to the <TT>ServerRoot</TT> directory). The user names and passwords
+			stored in this file are shown at the left. <BR>
+			Line <B>3</B> specifies the string with which the user is prompted.<BR>
+			Lines <B>4-6</B> specify that only a <TT>valid-user</TT> can gain access to the static
+			image.<BR>
+			Lines <B>7-8</B> specify that only the user <TT>salvador</TT> can gain access to
+			the animated image.</TD>
+		<TD VALIGN="TOP">
+			<TABLE BORDER="1">
+				<TR>
+					<TD  NOWRAP><B>User</B></TD>
+					<TD  NOWRAP><B>Password</B></TD>
+				</TR>
+				<TR>
+					<TD  NOWRAP>pablo</TD>
+					<TD  NOWRAP>picasso</TD>
+				</TR>
+				<TR>
+					<TD HEIGHT="19"  NOWRAP>salvador</TD>
+					<TD HEIGHT="19"  NOWRAP>dali</TD>
+				</TR>
+				<TR>
+					<TD  NOWRAP>diego</TD>
+					<TD  NOWRAP>rivera</TD>
+				</TR>
+				<TR>
+					<TD  NOWRAP>juan</TD>
+					<TD  NOWRAP>gris</TD>
+				</TR>
+				<TR>
+					<TD  NOWRAP>frida</TD>
+					<TD  NOWRAP>kahlo</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+
+<HR>
+<BR>
+The following <A HREF="snapp.htm"><B>example</B></A> contains an embed <B>static</B>
+image of the front panel of the VI <B>Secret&nbsp;Panel.vi</B>. In order to see the
+image, you'll have to use one of the user names and the corresponding password from
+above, for example<BR>
+<BR>
+User: <B>pablo</B><BR>
+Password: <B>picasso</B><BR>
+<BR>
+
+<HR>
+<BR>
+The following <A HREF="monitorp.htm"><B>example</B></A> contains an embed <B>animated</B>
+image of the front panel of the VI <B>Secret&nbsp;Panel.vi</B>. In order to see the
+image, you'll have to use the following user name and password:<BR>
+<BR>
+User: <B>salvador</B><BR>
+Password: <B>dali</B></P>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+
+</BODY>
+
+</HTML>

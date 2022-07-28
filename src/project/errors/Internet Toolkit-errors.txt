@@ -1,0 +1,658 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>LabVIEW error file
+<nifamily familyname="Internet Toolkit" displayname="Internet Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-2765">
+Internet Toolkit:  A file already exists at the specified path.
+</nierror>
+<nierror code="-2764">
+Internet Toolkit:  Attempted to call Create Document with invalid doc type
+</nierror>
+<nierror code="-2763">
+Internet Toolkit:  Attempted to set the 'Loading External DTD' flag on invalid document
+</nierror>
+<nierror code="-2762">
+Internet Toolkit:  Attempted to get the 'Loading External DTD' flag on invalid document
+</nierror>
+<nierror code="-2761">
+Internet Toolkit:  Attempted to set Validate Schema Full Checking on invalid document
+</nierror>
+<nierror code="-2760">
+Internet Toolkit:  Attempted to get Validate Schema Full Checking on invalid document
+</nierror>
+<nierror code="-2759">
+Internet Toolkit:  Attempted to get SystemID on invalid notation
+</nierror>
+<nierror code="-2758">
+Internet Toolkit:  Attempted to get PublicID on invalid notation
+</nierror>
+<nierror code="-2757">
+Internet Toolkit:  Attempted to call Replace Data on invalid character data
+</nierror>
+<nierror code="-2756">
+Internet Toolkit:  Attempted to call Delete Data on invalid character data
+</nierror>
+<nierror code="-2755">
+Internet Toolkit:  Attempted to call Insert Data on invalid character data
+</nierror>
+<nierror code="-2754">
+Internet Toolkit:  Attempted to call Append Data on invalid character data
+</nierror>
+<nierror code="-2753">
+Internet Toolkit:  Attempted to get Substring Data on invalid character data
+</nierror>
+<nierror code="-2752">
+Internet Toolkit:  Attempted to get Length on invalid character data
+</nierror>
+<nierror code="-2751">
+Internet Toolkit:  Attempted to set Data on invalid character data
+</nierror>
+<nierror code="-2750">
+Internet Toolkit:  Attempted to get Data on invalid character data
+</nierror>
+<nierror code="-2749">
+Internet Toolkit:  Attempted to call Has Attribute NS on invalid element
+</nierror>
+<nierror code="-2748">
+Internet Toolkit:  Attempted to call Has Attribute on invalid element
+</nierror>
+<nierror code="-2747">
+Internet Toolkit:  Attempted to call Get Element By Tag Name NS on invalid element
+</nierror>
+<nierror code="-2746">
+Internet Toolkit:  Attempted to call Set Attribute Node NS with invalid parameter on element
+</nierror>
+<nierror code="-2745">
+Internet Toolkit:  Attempted to call Set Attribute Node NS on invalid element
+</nierror>
+<nierror code="-2744">
+Internet Toolkit:  Attempted to call Get Attribute Node NS on invalid element
+</nierror>
+<nierror code="-2743">
+Internet Toolkit:  Attempted to call Remove Attribute NS on invalid element
+</nierror>
+<nierror code="-2742">
+Internet Toolkit:  Attempted to call Set Attribute NS on invalid element
+</nierror>
+<nierror code="-2741">
+Internet Toolkit:  Attempted to call Get Attribute NS on invalid element
+</nierror>
+<nierror code="-2740">
+Internet Toolkit:  Attempted to call Remove Attribute Node with invalid parameter on element
+</nierror>
+<nierror code="-2739">
+Internet Toolkit:  Attempted to call Remove Attribute Node on invalid element
+</nierror>
+<nierror code="-2738">
+Internet Toolkit:  Attempted to call Remove Attribute on invalid element
+</nierror>
+<nierror code="-2737">
+Internet Toolkit:  Attempted to call Set Attribute Node with invalid parameter on element
+</nierror>
+<nierror code="-2736">
+Internet Toolkit:  Attempted to call Set Attribute Node on invalid element
+</nierror>
+<nierror code="-2735">
+Internet Toolkit:  Attempted to call Set Attribute on invalid element
+</nierror>
+<nierror code="-2734">
+Internet Toolkit:  Attempted to call Get Attribute Node on invalid element
+</nierror>
+<nierror code="-2733">
+Internet Toolkit:  Attempted to get Attribute on invalid element
+</nierror>
+<nierror code="-2732">
+Internet Toolkit:  Attempted to get Tag Name on invalid element
+</nierror>
+<nierror code="-2731">
+Internet Toolkit:  Attempted to call Get Element By Tag Name on invalid element
+</nierror>
+<nierror code="-2730">
+Internet Toolkit:  Attempted to get Item on invalid node list
+</nierror>
+<nierror code="-2729">
+Internet Toolkit:  Attempted to get Length on invalid node list
+</nierror>
+<nierror code="-2728">
+Internet Toolkit:  Attempted to get Length on invalid named node map
+</nierror>
+<nierror code="-2727">
+Internet Toolkit:  Attempted to get Item on invalid named node map
+</nierror>
+<nierror code="-2726">
+Internet Toolkit:  Attempted to set Named Item NS with invalid parameter on named node map
+</nierror>
+<nierror code="-2725">
+Internet Toolkit:  Attempted to set Named Item NS on invalid named node map
+</nierror>
+<nierror code="-2724">
+Internet Toolkit:  Attempted to get Named Item NS on invalid named node map
+</nierror>
+<nierror code="-2723">
+Internet Toolkit:  Attempted to set Named Item with invalid parameter on named node map
+</nierror>
+<nierror code="-2722">
+Internet Toolkit:  Attempted to set Named Item on invalid named node map
+</nierror>
+<nierror code="-2721">
+Internet Toolkit:  Attempted to call Remove Named Item NS on invalid named node map
+</nierror>
+<nierror code="-2720">
+Internet Toolkit:  Attempted to call Get Elements By Id on invalid document
+</nierror>
+<nierror code="-2719">
+Internet Toolkit:  Attempted to call Get Elements By Tag Name NS on invalid document
+</nierror>
+<nierror code="-2718">
+Internet Toolkit:  Attempted to call Create Attribute NS on invalid document
+</nierror>
+<nierror code="-2717">
+Internet Toolkit:  Attempted to call Create Attribute NS with empty name string
+</nierror>
+<nierror code="-2716">
+Internet Toolkit:  Attempted to call Create Element NS on invalid document
+</nierror>
+<nierror code="-2715">
+Internet Toolkit:  Attempted to call Create Element NS with empty name string
+</nierror>
+<nierror code="-2714">
+Internet Toolkit:  Attempted to set Do Schema on invalid document
+</nierror>
+<nierror code="-2713">
+Internet Toolkit:  Attempted to get Do Schema on invalid document
+</nierror>
+<nierror code="-2712">
+Internet Toolkit:  Error occurred while saving file due to bad path
+</nierror>
+<nierror code="-2711">
+Internet Toolkit:  Error occurred while loading file due to bad path
+</nierror>
+<nierror code="-2710">
+Internet Toolkit:  Error occurred while loading file
+</nierror>
+<nierror code="-2709">
+Internet Toolkit:  Attempted to get InternalSubset on invalid dtd
+</nierror>
+<nierror code="-2708">
+Internet Toolkit:  Attempted to get SystemId on invalid dtd
+</nierror>
+<nierror code="-2707">
+Internet Toolkit:  Attempted to get PublicId on invalid dtd
+</nierror>
+<nierror code="-2706">
+Internet Toolkit:  Attempted to call Create Document on invalid implementation
+</nierror>
+<nierror code="-2705">
+Internet Toolkit:  Attempted to call Create Document Type on invalid implementation
+</nierror>
+<nierror code="-2704">
+Internet Toolkit:  Attempted to get OwnerElement on invalid attribute
+</nierror>
+<nierror code="-2703">
+Internet Toolkit:  Attempted to set Value on invalid attribute
+</nierror>
+<nierror code="-2702">
+Internet Toolkit:  Attempted to get Value on invalid attribute
+</nierror>
+<nierror code="-2701">
+Internet Toolkit:  Attempted to get Name on invalid attribute
+</nierror>
+<nierror code="-2700">
+Internet Toolkit:  Attempted to call Is Supported on invalid node refnum
+</nierror>
+<nierror code="-2699">
+Internet Toolkit:  Attempted to set Prefix on invalid node refnum
+</nierror>
+<nierror code="-2698">
+Internet Toolkit:  All access to the XML DOM Parser must go through an initialized document
+</nierror>
+<nierror code="-2697">
+Internet Toolkit:  Attempted to get Attributes with invalid parameter New Node
+</nierror>
+<nierror code="-2696">
+Internet Toolkit:  Attempted to get Attributes on invalid named node map refnum
+</nierror>
+<nierror code="-2695">
+Internet Toolkit:  Attempted to call Remove Named Item on invalid named node map
+</nierror>
+<nierror code="-2694">
+Internet Toolkit:  Attempted to get Named Item on invalid named node map
+</nierror>
+<nierror code="-2693">
+Internet Toolkit:  Attempted to get array on invalid named node map
+</nierror>
+<nierror code="-2692">
+Internet Toolkit:  Attempted to set Preserve Whitespace on invalid document
+</nierror>
+<nierror code="-2691">
+Internet Toolkit:  Attempted to get Preserve Whitespace on invalid document
+</nierror>
+<nierror code="-2690">
+Internet Toolkit:  Attempted to call Implementation on invalid document
+</nierror>
+<nierror code="-2689">
+Internet Toolkit:  Attempted to set Validate On Load on invalid document
+</nierror>
+<nierror code="-2688">
+Internet Toolkit:  Attempted to get Validate On Load on invalid document
+</nierror>
+<nierror code="-2687">
+Internet Toolkit:  Attempted to call Get Elements By Tag Name on invalid document
+</nierror>
+<nierror code="-2686">
+Internet Toolkit:  Attempted to get DocType on invalid document
+</nierror>
+<nierror code="-2685">
+Internet Toolkit:  Attempted to call Create Text Node on invalid document
+</nierror>
+<nierror code="-2684">
+Internet Toolkit:  Attempted to call Create Document Fragment on invalid document
+</nierror>
+<nierror code="-2683">
+Internet Toolkit:  Attempted to call Create Processing Instruction on invalid document
+</nierror>
+<nierror code="-2682">
+Internet Toolkit:  Attempted to call Create Processing Instruction with empty target string
+</nierror>
+<nierror code="-2681">
+Internet Toolkit:  Attempted to call Create Attribute on invalid document
+</nierror>
+<nierror code="-2680">
+Internet Toolkit:  Attempted to call Create Attribute with empty name string
+</nierror>
+<nierror code="-2679">
+Internet Toolkit:  Attempted to call Create CDATA Section on invalid document
+</nierror>
+<nierror code="-2678">
+Internet Toolkit:  Attempted to call Create Element on invalid document
+</nierror>
+<nierror code="-2677">
+Internet Toolkit:  Attempted to call Create Element with empty name string
+</nierror>
+<nierror code="-2676">
+Internet Toolkit:  Attempted to call Create Comment on invalid document
+</nierror>
+<nierror code="-2675">
+Internet Toolkit:  Attempted to get Document Element on invalid document
+</nierror>
+<nierror code="-2674">
+Internet Toolkit:  Attempted to call Save File on invalid document
+</nierror>
+<nierror code="-2673">
+Internet Toolkit:  Attempted to call Load File on invalid document
+</nierror>
+<nierror code="-2672">
+Internet Toolkit:  Attempted to get Notations on invalid dtd
+</nierror>
+<nierror code="-2671">
+Internet Toolkit:  Attempted to get Entities on invalid dtd
+</nierror>
+<nierror code="-2670">
+Internet Toolkit:  Attempted to get Name on invalid dtd
+</nierror>
+<nierror code="-2669">
+Internet Toolkit:  Attempted to call Has Feature on invalid implementation
+</nierror>
+<nierror code="-2668">
+Internet Toolkit:  Attempted to get Notation Name on invalid entity
+</nierror>
+<nierror code="-2667">
+Internet Toolkit:  Attempted to get SystemID on invalid entity
+</nierror>
+<nierror code="-2666">
+Internet Toolkit:  Attempted to get PublicID on invalid entity
+</nierror>
+<nierror code="-2665">
+Internet Toolkit:  Attempted to set Data on invalid processing instruction
+</nierror>
+<nierror code="-2664">
+Internet Toolkit:  Attempted to get Data on invalid processing instruction
+</nierror>
+<nierror code="-2663">
+Internet Toolkit:  Attempted to get Target on invalid processing instruction
+</nierror>
+<nierror code="-2662">
+Internet Toolkit:  Attempted to call Split Text on invalid text node
+</nierror>
+<nierror code="-2661">
+Internet Toolkit:  Attempted to get Specified on invalid attribute
+</nierror>
+<nierror code="-2660">
+Internet Toolkit:  Attempted to call Replace Child with invalid node refnum parameter Old Child
+</nierror>
+<nierror code="-2659">
+Internet Toolkit:  Attempted to call Replace Child with invalid node refnum parameter New Child
+</nierror>
+<nierror code="-2658">
+Internet Toolkit:  Attempted to call Replace Child on invalid node refnum
+</nierror>
+<nierror code="-2657">
+Internet Toolkit:  Attempted to call Insert Before with invalid node refnum parameter New Child
+</nierror>
+<nierror code="-2656">
+Internet Toolkit:  Attempted to call Insert Before on invalid node refnum
+</nierror>
+<nierror code="-2655">
+Internet Toolkit:  Attempted to call Normalize on invalid node refnum
+</nierror>
+<nierror code="-2654">
+Internet Toolkit:  Cannot call Normalize on node that is not of element type
+</nierror>
+<nierror code="-2653">
+Internet Toolkit:  Attempted to call Get XML on invalid node refnum
+</nierror>
+<nierror code="-2652">
+Internet Toolkit:  Attempted to call Has Child Nodes on invalid node refnum
+</nierror>
+<nierror code="-2651">
+Internet Toolkit:  Attempted to call Clone Node on invalid node refnum
+</nierror>
+<nierror code="-2650">
+Internet Toolkit:  Attempted to call Set Text on invalid node refnum
+</nierror>
+<nierror code="-2649">
+Internet Toolkit:  Attempted to call Get Text on invalid node refnum
+</nierror>
+<nierror code="-2648">
+Internet Toolkit:  Attempted to call Append Child with invalid refnum parameter New Child
+</nierror>
+<nierror code="-2647">
+Internet Toolkit:  Attempted to call Append Child on invalid refnum
+</nierror>
+<nierror code="-2646">
+Internet Toolkit:  Attempted to call Remove Child with invalid refnum parameter Old Child
+</nierror>
+<nierror code="-2645">
+Internet Toolkit:  Attempted to call Remove Child on invalid node refnum
+</nierror>
+<nierror code="-2644">
+Internet Toolkit:  Attempted to set Node Value on invalid node refnum
+</nierror>
+<nierror code="-2643">
+Internet Toolkit:  Attempted to get Attributes on invalid node refnum
+</nierror>
+<nierror code="-2642">
+Internet Toolkit:  Attempted to get Namespace Name on invalid node refnum
+</nierror>
+<nierror code="-2641">
+Internet Toolkit:  Attempted to get Prefix Name on invalid node refnum
+</nierror>
+<nierror code="-2640">
+Internet Toolkit:  Attempted to get Base Name on invalid node refnum
+</nierror>
+<nierror code="-2639">
+Internet Toolkit:  Attempted to get Owner Document on invalid node refnum
+</nierror>
+<nierror code="-2638">
+Internet Toolkit:  Attempted to get Previous Sibling on invalid node refnum
+</nierror>
+<nierror code="-2637">
+Internet Toolkit:  Attempted to get Next Sibling on invalid node refnum
+</nierror>
+<nierror code="-2636">
+Internet Toolkit:  Attempted to get Parent Node on invalid node refnum
+</nierror>
+<nierror code="-2635">
+Internet Toolkit:  Attempted to get Last Child on invalid node refnum
+</nierror>
+<nierror code="-2634">
+Internet Toolkit:  Attempted to get First Child on invalid node refnum
+</nierror>
+<nierror code="-2633">
+Internet Toolkit:  Attempted to get Child Nodes on invalid node refnum
+</nierror>
+<nierror code="-2632">
+Internet Toolkit:  Attempted to get Node Value on invalid node refnum
+</nierror>
+<nierror code="-2631">
+Internet Toolkit:  Attempted to get Node Name on invalid node refnum
+</nierror>
+<nierror code="-2630">
+Internet Toolkit:  Attempted to get Node Type on invalid node refnum
+</nierror>
+<nierror code="-2629">
+Internet Toolkit:  An unknown error occurred
+</nierror>
+<nierror code="-2628">
+Internet Toolkit:  An error occurred while parsing the document
+</nierror>
+<nierror code="-2627">
+Internet Toolkit:  Unknown user error
+</nierror>
+<nierror code="-2626">
+Internet Toolkit:  Invalid refnum used
+</nierror>
+<nierror code="-2625">
+Internet Toolkit:  An error occurred while saving the document
+</nierror>
+<nierror code="-2616">
+Internet Toolkit:  A system error occurred
+</nierror>
+<nierror code="-2615">
+Internet Toolkit:  A method was called which would make the Node invalid with respect to "partial validity", the operation was not performed
+</nierror>
+<nierror code="-2614">
+Internet Toolkit:  A parameter or operation was not supported by the underlying object
+</nierror>
+<nierror code="-2613">
+Internet Toolkit:  An attempt was made to create or change an object in a way which was incorrect with regard to namespaces
+</nierror>
+<nierror code="-2612">
+Internet Toolkit:  An attempt was made to modify the type of an underlying object
+</nierror>
+<nierror code="-2611">
+Internet Toolkit:  An invalid or illegal string was specified
+</nierror>
+<nierror code="-2610">
+Internet Toolkit:  An attempt was made to use an object that is not, or is no longer, usable
+</nierror>
+<nierror code="-2609">
+Internet Toolkit:  An attempt was made to add an attribute that is already in use elsewhere
+</nierror>
+<nierror code="-2608">
+Internet Toolkit:  Implementation does not support the requested type of object or operation
+</nierror>
+<nierror code="-2607">
+Internet Toolkit:  An attempt was made to reference a node in a context where it does not exist
+</nierror>
+<nierror code="-2606">
+Internet Toolkit:  An attempt was made to modify an object where modifications aren't allowed
+</nierror>
+<nierror code="-2605">
+Internet Toolkit:  Data was specified for a node which does not support data
+</nierror>
+<nierror code="-2604">
+Internet Toolkit:  An invalid or illegal character was specified, such as in a name
+</nierror>
+<nierror code="-2603">
+Internet Toolkit:  Node was used in a different document than the one that created it (that doesn't support it)
+</nierror>
+<nierror code="-2602">
+Internet Toolkit:  A node was inserted somewhere it doesn't belong
+</nierror>
+<nierror code="-2601">
+Internet Toolkit:  The specified range of text does not fit into a string
+</nierror>
+<nierror code="-2600">
+Internet Toolkit:  Index or size is negative, or greater than the allowed value
+</nierror>
+<nierror code="2713">
+Internet Toolkit:  Attempted to get Do Schema on invalid document
+</nierror>
+<nierror code="15110">
+Internet Toolkit:  (Hex 0x3B06) 110 Restart marker reply.
+</nierror>
+<nierror code="15120">
+Internet Toolkit:  (Hex 0x3B10) 120 Service ready in nnn minutes.
+</nierror>
+<nierror code="15125">
+Internet Toolkit:  (Hex 0x3B15) 125 Data connection already open; transfer starting.
+</nierror>
+<nierror code="15150">
+Internet Toolkit:  (Hex 0x3B2E) 150 File status okay; about to open data connection.
+</nierror>
+<nierror code="15200">
+Internet Toolkit:  (Hex 0x3B60) 200 Command okay.
+</nierror>
+<nierror code="15202">
+Internet Toolkit:  (Hex 0x3B62) 202 Command not implemented, superfluous at this site.
+</nierror>
+<nierror code="15211">
+Internet Toolkit:  (Hex 0x3B6B) 211 System status, or system help reply.
+</nierror>
+<nierror code="15212">
+Internet Toolkit:  (Hex 0x3B6C) 212 Directory status.
+</nierror>
+<nierror code="15213">
+Internet Toolkit:  (Hex 0x3B6D) 213 File status.
+</nierror>
+<nierror code="15214">
+Internet Toolkit:  (Hex 0x3B6E) 214 Help message.
+</nierror>
+<nierror code="15215">
+Internet Toolkit:  (Hex 0x3B6F) 215 NAME system type.
+</nierror>
+<nierror code="15220">
+Internet Toolkit:  (Hex 0x3B74) 220 Service ready for new user.
+</nierror>
+<nierror code="15221">
+Internet Toolkit:  (Hex 0x3B75) 221 Service closing control connection.
+</nierror>
+<nierror code="15225">
+Internet Toolkit:  (Hex 0x3B79) 225 Data connection open; no transfer in progress.
+</nierror>
+<nierror code="15226">
+Internet Toolkit:  (Hex 0x3B7A) 226 Closing data connection.
+</nierror>
+<nierror code="15227">
+Internet Toolkit:  (Hex 0x3B7B) 227 Entering Passive Mode (h1,h2,h3,h4,p1,p2).
+</nierror>
+<nierror code="15230">
+Internet Toolkit:  (Hex 0x3B7E) 230 User logged in, proceed.
+</nierror>
+<nierror code="15250">
+Internet Toolkit:  (Hex 0x3B92) 250 Requested file action okay, completed.
+</nierror>
+<nierror code="15257">
+Internet Toolkit:  (Hex 0x3B99) 257 "PATHNAME" created.
+</nierror>
+<nierror code="15331">
+Internet Toolkit:  (Hex 0x3BE3) 331 User name okay, need password.
+</nierror>
+<nierror code="15332">
+Internet Toolkit:  (Hex 0x3BE4) 332 Need account for login.
+</nierror>
+<nierror code="15350">
+Internet Toolkit:  (Hex 0x3BF6) 350 Requested file action pending further information.
+</nierror>
+<nierror code="15421">
+Internet Toolkit:  (Hex 0x3C3D) 421 Service not available, closing control connection.
+</nierror>
+<nierror code="15425">
+Internet Toolkit:  (Hex 0x3C41) 425 Can't open data connection.
+</nierror>
+<nierror code="15426">
+Internet Toolkit:  (Hex 0x3C42) 426 Connection closed; transfer aborted.
+</nierror>
+<nierror code="15450">
+Internet Toolkit:  (Hex 0x3C5A) 450 Requested file action not taken.
+</nierror>
+<nierror code="15451">
+Internet Toolkit:  (Hex 0x3C5B) 451 Requested action aborted: local error in processing.
+</nierror>
+<nierror code="15452">
+Internet Toolkit:  (Hex 0x3C5C) 452 Requested action not taken.
+</nierror>
+<nierror code="15500">
+Internet Toolkit:  (Hex 0x3C8C) 500 Syntax error, command unrecognized.
+</nierror>
+<nierror code="15501">
+Internet Toolkit:  (Hex 0x3C8D) 501 Syntax error in parameters or arguments.
+</nierror>
+<nierror code="15502">
+Internet Toolkit:  (Hex 0x3C8E) 502 Command not implemented.
+</nierror>
+<nierror code="15503">
+Internet Toolkit:  (Hex 0x3C8F) 503 Bad sequence of commands.
+</nierror>
+<nierror code="15504">
+Internet Toolkit:  (Hex 0x3C90) 504 Command not implemented for that parameter.
+</nierror>
+<nierror code="15530">
+Internet Toolkit:  (Hex 0x3CAA) 530 Not logged in.
+</nierror>
+<nierror code="15532">
+Internet Toolkit:  (Hex 0x3CAC) 532 Need account for storing files.
+</nierror>
+<nierror code="15550">
+Internet Toolkit:  (Hex 0x3CBE) 550 Requested action not taken.
+</nierror>
+<nierror code="15551">
+Internet Toolkit:  (Hex 0x3CBF) 551 Requested action aborted: page type unknown.
+</nierror>
+<nierror code="15552">
+Internet Toolkit:  (Hex 0x3CC0) 552 Requested file action aborted.
+</nierror>
+<nierror code="15553">
+Internet Toolkit:  (Hex 0x3CC1) 553 Requested action not taken.
+</nierror>
+<nierror code="17200">
+Internet Toolkit:  (Hex 0x4330) 200 OK
+</nierror>
+<nierror code="17201">
+Internet Toolkit:  (Hex 0x4331) 201 Created
+</nierror>
+<nierror code="17202">
+Internet Toolkit:  (Hex 0x4332) 202 Accepted
+</nierror>
+<nierror code="17204">
+Internet Toolkit:  (Hex 0x4334) 204 No Content
+</nierror>
+<nierror code="17300">
+Internet Toolkit:  (Hex 0x4394) 300 Multiple Choices
+</nierror>
+<nierror code="17301">
+Internet Toolkit:  (Hex 0x4395) 301 Moved Permanently
+</nierror>
+<nierror code="17302">
+Internet Toolkit:  (Hex 0x4396) 302 Moved Temporarily
+</nierror>
+<nierror code="17304">
+Internet Toolkit:  (Hex 0x4398) 304 Not Modified
+</nierror>
+<nierror code="17400">
+Internet Toolkit:  (Hex 0x43F8) 400 Bad Request
+</nierror>
+<nierror code="17401">
+Internet Toolkit:  (Hex 0x43F9) 401 Unauthorized
+</nierror>
+<nierror code="17403">
+Internet Toolkit:  (Hex 0x43FB) 403 Forbidden
+</nierror>
+<nierror code="17404">
+Internet Toolkit:  (Hex 0x43FC) 404 Not Found
+</nierror>
+<nierror code="17500">
+Internet Toolkit:  (Hex 0x445C) 500 Internal Server Error
+</nierror>
+<nierror code="17501">
+Internet Toolkit:  (Hex 0x445D) 501 Not Implemented
+</nierror>
+<nierror code="17502">
+Internet Toolkit:  (Hex 0x445E) 502 Bad Gateway
+</nierror>
+<nierror code="17503">
+Internet Toolkit:  (Hex 0x445F) 503 Service Unavailable
+</nierror>
+<nierror code="17999">
+Internet Toolkit:  Infinite redirection loop found.
+</nierror>
+<nierror code="18000">
+Internet Toolkit:  Invalid URL protocol
+</nierror>
+<nierror code="18001">
+Internet Toolkit:  foo
+</nierror>
+</nidocument>

@@ -1,0 +1,6 @@
+# specifies required users and login prompt
+
+AuthName Beatles Pages
+<Limit GET>
+require group beatles
+</Limit>

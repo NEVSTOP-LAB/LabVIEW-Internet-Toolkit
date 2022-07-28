@@ -1,0 +1,11 @@
+BODY	
+	{ margin: 15pt; }
+	
+BODY,P,TD
+	{ font-family: "Trebuchet MS", Arial, Helvetica; }
+	
+H1,H2,H3,H4
+	{ font-family: "Trebuchet MS", Verdana, Arial, Helvetica; }
+	
+TT,PRE
+	{ font-family: "Courier New", "Courier", "Monaco"; }

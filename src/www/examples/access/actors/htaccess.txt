@@ -1,0 +1,8 @@
+# specifies required users and login prompt
+
+AuthName Actors Pages
+<Limit GET>
+require group actors
+require user richard
+require user wolfgang
+</Limit>

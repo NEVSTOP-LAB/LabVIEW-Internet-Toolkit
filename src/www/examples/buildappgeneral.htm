@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Fri, Apr 17, 1998 9:28 AM-->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<LINK rel=STYLESHEET href="../itk.css" Type="text/css">
+
+	<META NAME="Author" Content="Internet Toolkit">
+	<TITLE>General Instructions For Any CGI VI</TITLE>
+</HEAD>
+
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="../images/examples.gif" WIDTH="440" HEIGHT="36"
+ALIGN="BOTTOM" ALT="G Web Server Examples" BORDER="0"></A>
+<H2>General Instructions For Any CGI VI</H2>
+<P>Here is a set of steps that can be followed to build an executable out of the 
+G Web Server that uses CGI VIs. 
+<H2></H2>
+
+<DL>
+	<DL>
+		<DT><B>Instructions for building an executable with the Internet Toolkit G Web Server with 
+		CGI:</B></A></DT><P>
+		<DD>	1. Select <B>Tools » Build Application or Shared Library (DLL).</B>
+		<DD>	2. Select a location for the executable to be built (Destination directory).
+		<DD>	3. Select <B>Single target file containing all VIs</B> from the <B>Build Options</B> 
+		list.
+		<DD>	4. Add the Top-Level VI and Dynamic VIs (be sure to include all user CGI VIs as dynamic VIs).
+		<DD>	5. Select the <B>VI Settings</B> tab and select <B>Edit Build Setting</B> for each user CGI
+		VI. Set Remove Panel to NO for each VI (if necessary).
+		<DD>	6. Add the configuration files from internet\http\conf directory as support files 
+		and change the custom destination to be <code>&lt;Destination directory&gt;\internet\http\conf\</code>.
+		<DD>	7. Build the executable.
+		<DD>	8. Exit the Application Builder by pressing the <B>Done</B> button.
+		<DD>	9. Edit DocumentRoot in the srm.cfg file (from the built application, not the original) 
+		to be the location of the application's home directory. (The directory out of which you will serve 
+		your documents. By default, all requests are taken from this directory. Normally this is the 
+		application directory plus /www.)
+		<DD>	10. Make sure that the ScriptAlias line near the bottom of scm.cfg file (from the built 
+		application, not the original) is uncommented (remove the #).
+		<DD>	11. Edit the lvhttp.cfg file (from the built application, not the original) so that UseDNS 
+		is set to ON.
+		<DD>	12. To run the GWS in module mode, make sure that the ini file has the following tokens 
+		set to True, and for standalone mode, make sure they are set to false 
+		Webserver.Enabled=False 
+		InternetToolkitInstalled=False 
+		<DD>	13. Run the application. Note that you need to set the operation control to "start" and run the G Web Server Control VI to start the G Web Server.
+		<DD>	14. To get to the CGI VI, type in http://yourservername:portyouused/cgi-bin/VIName.vi 
+		in your browser.
+	</DL>
+</DL>
+
+<P>
+<HR>
+<A HREF="http://www.ni.com">&copy; National Instruments</A>
+
+</BODY>
+
+</HTML>
