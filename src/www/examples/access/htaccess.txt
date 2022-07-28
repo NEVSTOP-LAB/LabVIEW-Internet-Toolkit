@@ -1,6 +1,0 @@
-# Specifies what group and password files will be used by sub directories
-# as well as the default login prompt
-
-AuthName Protected Pages
-AuthUserFile pwd.txt
-AuthGroupFile grp.txt
