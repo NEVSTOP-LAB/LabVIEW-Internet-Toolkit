@@ -14,6 +14,8 @@ Modification:
 
 1. Remove HttpClient VIs as LabVIEW contains a newer version in the same folder
 2. Remove www folder contents as LabVIEW contains a newer version in the same folder
+3. Remove project/internet folder
+4. Remove internet folder
 
 Following KB of NI:
 
