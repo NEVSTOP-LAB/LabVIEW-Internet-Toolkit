@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-07-28 14:12:37" Modified_Date="2022-07-28 14:44:13" Creator="yaoli" Comments="" ID="b7df5414b88f39a288877fd4860dfa88">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-07-28 14:12:37" Modified_Date="2022-07-31 09:17:29" Creator="yaoli" Comments="" ID="453646d0bb4dbec64a7a1900b01a229b">
   <Library_General_Settings>
     <Package_File_Name>LabVIEW_Internet_Toolkit</Package_File_Name>
-    <Library_Version>1.0.0.3</Library_Version>
+    <Library_Version>1.0.0.18</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>src</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -28,7 +28,28 @@
     <VI_Package_Configuration_File>LabVIEW-Internet-Toolkit.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary/>
-      <Description/>
+      <Description>LabVIEW Internet Toolkit for LabVIEW 2014 or later
+----------------------------
+
+
+Keywords: `LabVIEW`,`Telnet`,`html`,`Internet` `Toolkit`
+
+Source code from LabVIEW Internet Toolkit 2012: [Readme.html](https://www.ni.com/pdf/manuals/LabVIEW_2012readme_KB.html)
+
+Copyright Notice£º
+
+All of the code belongs to National Instruments.
+
+Modification:
+
+1. Remove HttpClient VIs as LabVIEW contains a newer version in the same folder
+2. Remove www folder contents as LabVIEW contains a newer version in the same folder
+3. Remove project/internet folder
+
+Following KB of NI:
+
+- [Archived:Available Versions of LabVIEW Internet Toolkit](https://www.bing.com/search?q=LabVIEW-Internet-Toolkit&amp;cvid=8b8b7db770d54b358f54d69676d448ed&amp;aqs=edge..69i57j69i60l3&amp;FORM=ANAB01&amp;PC=U531)
+- [How Can I Use LabVIEW and Telnet?](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kH2QSAU&amp;l=zh-CN)</Description>
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>LabVIEW-Internet-Toolkit</URL>
@@ -48,6 +69,7 @@ Modification:
 
 1. Remove HttpClient VIs as LabVIEW contains a newer version in the same folder
 2. Remove www folder contents as LabVIEW contains a newer version in the same folder
+3. Remove project/internet folder
 
 Following KB of NI:
 
@@ -58,12 +80,12 @@ Following KB of NI:
       <Toolkit_VIs>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;vi.lib&gt;</Path>
       </Toolkit_VIs>
       <Examples>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;application&gt;\examples</Path>
       </Examples>
       <Custom_Probes>
         <LLB>false</LLB>
@@ -119,6 +141,48 @@ Following KB of NI:
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
         <Path>&lt;application&gt;</Path>
       </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\help</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;help&gt;</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\menus</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;menus&gt;</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\project</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;project&gt;</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\readme</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;application&gt;\readme</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\www</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;application&gt;\www</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\vi.lib</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;vi.lib&gt;</Path>
+      </Additional_Destination>
+      <Additional_Destination>
+        <Name>LabVIEW\examples</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;application&gt;\examples</Path>
+      </Additional_Destination>
     </Destinations>
     <Source_Files>
       <Destination_Overrides>
@@ -127,21 +191,62 @@ Following KB of NI:
         <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
-      <Password_Overrides>
-        <Path>.</Path>
-        <Password/>
-        <Locked_Only>false</Locked_Only>
-      </Password_Overrides>
-      <Namespace_Overrides>
-        <Path>.</Path>
-        <Namespace_Type>Prefix</Namespace_Type>
-        <Namespace/>
-      </Namespace_Overrides>
+      <Destination_Overrides>
+        <Path>internet-from-lv-internet-toolkit-2012.zip.zip</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>www</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>vi.lib</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Exclusions>
+        <Path>examples</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>help</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>menus</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>project</Path>
+      </Exclusions>
       <Compile_Exclusions>
-        <Path>.</Path>
+        <Path>vi.lib</Path>
+      </Compile_Exclusions>
+      <Compile_Exclusions>
+        <Path>www</Path>
+      </Compile_Exclusions>
+      <Compile_Exclusions>
+        <Path>readme</Path>
       </Compile_Exclusions>
       <Place_Folder_Contents>
         <Path/>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>help</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>project</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>readme</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>www</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>menus</Path>
       </Place_Folder_Contents>
     </Source_Files>
     <License_Agreement_Filepath/>
@@ -198,7 +303,7 @@ Following KB of NI:
     <LabVIEW>
       <close_labview_before_install>false</close_labview_before_install>
       <restart_labview_after_install>false</restart_labview_after_install>
-      <skip_mass_compile_after_install>false</skip_mass_compile_after_install>
+      <skip_mass_compile_after_install>true</skip_mass_compile_after_install>
     </LabVIEW>
     <VI_Docs>
       <Edit_VI_Description>false</Edit_VI_Description>
